@@ -12,13 +12,30 @@
     .flex-container {
       display: flex;
       height: 150;
+      border: 2px solid black;
+      max-width: 300px;
+
     }
 
     .item {
       font-size: 24px;
       height: 50%;
       text-align: center;
+      width: 100px;
+      line-height: 50px;
     }
+    .green{
+      background-color:green;
+    }
+
+    .yellow{
+      background-color:yellow;
+    }
+
+    .blue{
+      background-color:blue;
+    }
+
 
     .nowrap {
       flex-wrap: nowrap;
@@ -30,9 +47,9 @@
 <body>
   <h1>no wrap</h1>
   <div class="flex-container">
-    <div class="item">1</div>
-    <div class="item">2</div>
-    <div class="item">3</div>
+    <div class="item green">1 </div>
+    <div class="item yellow">2</div>
+    <div class="item blue">3</div>
   </div>
 
 </body>

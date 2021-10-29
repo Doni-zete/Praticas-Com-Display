@@ -10,9 +10,11 @@
   <style>
     .flex-container {
       display: flex;
-      height: 150;
+      flex-direction: column;
+      height: 150px;
       border: 2px solid black;
       max-width: 310px;
+
 
     }
 
@@ -32,6 +34,10 @@
       flex-wrap: wrap;
     }
 
+    .wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+
     .green {
       background-color: green;
     }
@@ -43,6 +49,10 @@
     .blue {
       background-color: blue;
     }
+
+    .white {
+      background-color: white;
+    }
   </style>
 
 </head>
@@ -53,7 +63,7 @@
     <div class="item green">1 </div>
     <div class="item yellow">2</div>
     <div class="item blue">3</div>
-    <div class="item blue">3</div>
+    <div class="item white">4</div>
   </div>
 
 
@@ -62,10 +72,17 @@
     <div class="item green">1 </div>
     <div class="item yellow">2</div>
     <div class="item blue">3</div>
-    <div class="item blue">4</div>
-
-
+    <div class="item white">4</div>
   </div>
+
+
+  <h1>wrap-reverse</h1>
+  <div class="flex-container wrap-reverse">
+    <div class="item green">1 </div>
+    <div class="item yellow">2</div>
+    <div class="item blue">3</div>
+    <div class="item white">4</div>
+
 
 </body>
 

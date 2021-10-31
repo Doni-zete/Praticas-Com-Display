@@ -1,48 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fundamentos -align items</title>
 
-<style>
-.container{
-  max-width: 350px;
-  border: 2px solid black;
-  display: flex;
-}
+  <style>
+    .container {
+      max-width: 350px;
+      border: 2px solid black;
+      display: flex;
+    }
 
-.item{
-  background-color: brown;
-  margin: 5px;
-  color: white;
-  text-align: center;
-  flex: 1;
-}
+    .item {
+      background-color: brown;
+      margin: 5px;
+      color: white;
+      text-align: center;
+      flex: 1;
+    }
 
-.center{
-  align-items: center;
-}
-.stretch{
-  align-items: stretch;
-}
-.start{
-  align-items: flex-start;
-}
-.end{
-  align-items: flex-end;
-}
+    .center {
+      align-items: center;
+    }
 
-.baseline{
-  align-items: baseline;
-}
-.column{
-  flex-direction: column;
-}
+    .stretch {
+      align-items: stretch;
+    }
 
-</style>
+    .start {
+      align-items: flex-start;
+    }
+
+    .end {
+      align-items: flex-end;
+    }
+
+    .baseline {
+      align-items: baseline;
+    }
+
+    .column {
+      flex-direction: column;
+    }
+
+    .central {
+      height: 400px;
+      justify-content: center;
+    }
+    .central .item{
+      flex: 0;
+      padding: 20px;
+    }
+  </style>
 </head>
+
 <body>
 
   <h1>row</h1>
@@ -63,8 +77,8 @@
     <div class="item">4</div>
     <div class="item">5 Item</div>
   </section>
-  
-  
+
+
   <h1>flex-start</h1>
   <section class="container  start">
     <div class="item">1 Item primeiro</div>
@@ -131,7 +145,13 @@
     <div class="item">5 Item</div>
   </section>
 
+  <h1>Alimento central</h1>
+  <section class= "container central center">
+    <div class="item">Tudo que você tem, não tem</div>
+  </section>
+
 
 
 </body>
+
 </html>

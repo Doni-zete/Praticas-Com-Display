@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos align-content</title>
+</head>
+<style>
+  .container {
+    width: 450px;
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+  }
+
+  .item {
+    background-color: red;
+    padding: 5 px;
+    margin: 5px;
+    flex: 1;
+    text-align: center;
+    color: white;
+   
+  }
+
+  .stretch {
+    align-content: stretch;
+  }
+
+  .center {
+    align-content: center;
+  }
+
+  .flex-start {
+    align-content: flex-start;
+  }
+
+  .flex-end {
+    align-content: flex-end;
+  }
+
+  .space-around {
+    align-content: space-around;
+  }
+</style>
+
+<body>
+  <h1>stretch</h1>
+  <div class="container stretch ">
+    <div class="item">Bitcoin é uma criptomoeda descentralizada, sendo um dinheiro eletrônico para transações ponto a
+      ponto.</div>
+    <div class="item">sendo um dinheiro eletrônico </div>
+    <div class="item">sendo um dinheiro </div>
+    <div class="item">sendo um dinheiro eletrônico para transações ponto a ponto.</div>
+    <div class="item">sendo um dinheiro eletrônico para transações ponto a ponto.</div>
+    <div class="item">sendo um dinheiro eletrônico para transações ponto a ponto.</div>
+    <div class="item">sendo um dinheiro eletrônico para transações ponto a ponto.</div>
+  </div>
+
+  <h1>center</h1>
+  <div class="container center">
+    <div class="item">Bitcoin é uma criptomoeda descentralizada, sendo um dinheiro eletrônico para transações ponto a
+      ponto.</div>
+    <div class="item">sendo um dinheiro eletrônico </div>
+    <div class="item">sendo um dinheiro </div>
+    <div class="item">sendo um dinheiro eletrônico para transações ponto a ponto.</div>
+    <div class="item">sendo um dinheiro eletrônico para transações ponto a ponto.</div>
+    <div class="item">sendo um dinheiro eletrônico para transações ponto a ponto.</div>
+    <div class="item">sendo um dinheiro eletrônico para transações ponto a ponto.</div>
+  </div>
+
+
+  <h1>flex-start</h1>
+  <div class="container flex-start">
+    <div class="item">Bitcoin é uma criptomoeda </div>
+    <div class="item">sendo um dinheiro eletrônico </div>
+    <div class="item">sendo um dinheiro </div>
+    <div class="item">sendo um dinheiro .</div>
+    <div class="item">sendo um dinheiro eletrônico </div>
+    <div class="item">sendo um dinheiro </div>
+    <div class="item">sendo um dinheiro eletrônico </div>
+  </div>
+
+  <h1>flex-end</h1>
+  <div class="container flex-end">
+    <div class="item">Bitcoin é uma criptomoeda </div>
+    <div class="item">sendo um dinheiro eletrônico </div>
+    <div class="item">sendo um dinheiro</div>
+    <div class="item">sendo um dinheiro</div>
+    <div class="item">sendo um dinheiro eletrônic</div>
+    <div class="item">sendo um dinheir</div>
+    <div class="item">sendo um dinheiro eletrônic</div>
+  </div>
+
+  <h1>space-around</h1>
+  <div class="container space-around">
+    <div class="item">Bitcoin é uma criptomoeda </div>
+    <div class="item">Bitcoin é uma criptomoeda </div>
+    <div class="item">Bitcoin é uma criptomoeda </div>
+    <div class="item">Bitcoin é uma criptomoeda </div>
+    <div class="item">Bitcoin é uma criptomoeda </div>
+    <div class="item">Bitcoin é uma criptomoeda </div>
+    <div class="item">Bitcoin é uma criptomoeda </div>
+    <div class="item">Bitcoin é uma criptomoeda </div>
+  </div>
+
+
+  <h1>space-around</h1>
+  <div class="container space-around ">
+    <div class="item">Bitcoin é uma criptomoeda</div>
+    <div class="item">Bitcoin é uma criptomoeda</div>
+    <div class="item">Bitcoin é uma criptomoeda</div>
+    <div class="item">Bitcoin é uma criptomoeda</div>
+    <div class="item">Bitcoin é uma criptomoeda</div>
+    <div class="item">Bitcoin é uma criptomoeda</div>
+    <div class="item">Bitcoin é uma criptomoeda</div>
+    <div class="item">Bitcoin é uma criptomoeda</div>
+  </div>
+
+</body>
+
+</html>
